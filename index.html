@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Taekwondo Website</title>
+  </head>
+  <body>
+    <!-- Loading -->
+    <div
+      class="loading hidden fixed w-screen h-screen bg-black/60 flex justify-center items-center z-50 overflow-hidden"
+    >
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Akhir loading -->
+    <div class="root__container w-[100%] h-auto overflow-auto md:h-screen">
+      <!-- Landing page -->
+      <div class="w-full h-full bg-white flex flex-col">
+        <div class="landing__header mb-4">
+          <div class="font-sans font-bold text-2xl py-4 px-8">Logo</div>
+        </div>
+
+        <div class="landing__main flex flex-col flex-1 lg:flex-row">
+          <div class="w-full flex md:flex-row lg:flex-col">
+            <div class="w-full flex-1 relative">
+              <img
+                class="w-80 mx-auto md:w-[512px] lg:w-[640px] justify-self-end box-border relative z-20"
+                src="./img/tekwondo.png"
+                alt="tkimg"
+                data-aos="fade-up"
+                data-aos-once="true"
+              />
+              <img
+                src="./img/tk1.png"
+                class="w-40 lg:w-52 lg:block z-40 absolute right-0 bottom-0 opacity-60"
+                alt="img"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-once="true"
+              />
+              <img
+                src="./img/tk3.png"
+                class="hidden w-32 lg:block md:z-40 md:absolute bottom-52 right-10 opacity-60"
+                alt="img"
+              />
+              <div class="absolute top-0 left-0 z-10">
+                <img
+                  src="./img/tae.png"
+                  alt="img"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-once="true"
+                  class="lg:w-52"
+                />
+                <img
+                  src="./img/kwon.png"
+                  alt="img"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-once="true"
+                  class="lg:w-52"
+                />
+                <img
+                  src="./img/do.png"
+                  alt="img"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  data-aos-once="true"
+                  class="lg:w-52"
+                />
+              </div>
+            </div>
+            <div
+              class="bg-greeen1 hidden font-extrabold text-white tracking-[1rem] font-mono lg:flex md:z-10 w-full lg:justify-center lg:p-8"
+            >
+              COMPETE YOUR SKILLS
+            </div>
+          </div>
+
+          <div
+            class="w-full h-full flex flex-col justify-center bg-gradient-to-t from-greeen1 from-50% to-transparent py-20"
+          >
+            <div
+              class="flex flex-row justify-center text-4xl mb-4 md:text-3xl lg:text-9xl lg:flex-col lg:px-8 lg:gap-8"
+            >
+              <p class="tracking-[0.7rem] font-extrabold">TAE</p>
+              <p class="tracking-[0.7rem] font-extrabold">KWON</p>
+              <p class="tracking-[0.7rem] font-extrabold">DO</p>
+            </div>
+            <p
+              class="px-8 pt-8 font-semibold text-white font-sans tracking-[3px]"
+            >
+              TAEKWONDO LOREM IPSUM DOLOR SIT AMET ADIPASICING ELIT. TAEKWONDO
+              LOREM IPSUM DOLOR SIT AMET ADIPASICING ELIT.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir landing -->
+
+      <!-- Daftar gambar -->
+      <div class="image__section">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+            fill="#28B860"
+            fill-opacity="1"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+            fill="#28B860"
+            fill-opacity="1"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+            fill="#28B860"
+            fill-opacity="1"
+          ></path>
+        </svg>
+        <!-- Images here -->
+        <div class="images__container my-8">
+          <h1 class="text-center text-2xl font-semibold mb-8 underline">
+            Dokumentasi foto
+          </h1>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto justify-items-center gap-x-4 gap-y-8"
+          >
+            <!-- list -->
+            <div
+              class="group w-[300px] h-[200px] bg-slate-400 rounded-md hover:cursor-pointer hover:brightness-75 brigthness-100 transition duration-200"
+            >
+              <p
+                class="opacity-0 -translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 text-xl font-bold text-center flex w-full h-full justify-center items-center"
+              >
+                Judul gambar docs
+              </p>
+            </div>
+            <!-- Akhir list -->
+          </div>
+        </div>
+      </div>
+      <!-- Akhir daftar gambar -->
+
+      <!-- Bagian Kontak -->
+      <div id="kontak" class="mt-8 px-4">
+        <h1 class="text-center text-2xl font-semibold mb-8 underline">
+          Kontak
+        </h1>
+        <div
+          class="container-kontak p-0 w-full flex flex-col md:flex-row md:justify-center md:gap-8"
+        >
+          <div
+            class="kontak__form w-full flex text-base flex-col items-center p-6 md:text-lg md:w-[40%] md:max-w-[400px] lg:w-[40%] lg:max-w-[800px] lg:text-xl"
+          >
+            <form id="formEmail" action="" class="w-full flex flex-col gap-5">
+              <div>
+                <label for="name">Nama pengirim:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div>
+                <label for="email">Email pengirim:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div>
+                <label for="message">Pesan:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  class="h-[4em]"
+                ></textarea>
+              </div>
+
+              <div>
+                <button
+                  id="btn-email"
+                  type="submit"
+                  class="block mx-auto w-fit py-2 px-4 font-semibold bg-green-600 text-slate-100 rounded-md"
+                >
+                  Kirim email
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="kontak__sosial w-full text-base flex flex-col items-center p-6 md:text-lg md:w-[30%] lg:text-xl"
+          >
+            <div class="sosial__container w-full">
+              <h1 class="text-lg font-semibold">Email Kami</h1>
+              <p>wismaagung23@gmail.com</p>
+              <h1 class="mt-6 text-lg font-semibold">Domisili</h1>
+              <p>Kota Serang,</p>
+              <p>Provinsi Banten.</p>
+              <h1 class="mt-6 text-lg font-semibold">Sosial media</h1>
+              <div
+                class="sosmed mt-2 flex flex-row justify-between w-full lg:w-[70%] max-w-[200px]"
+              >
+                <!-- github svg -->
+                <a href="https://www.github.com/agungsukaafk" target="_blank">
+                  <img
+                    src="./dist/svg/github.svg"
+                    alt="github icon"
+                    class="w-9 h-8"
+                  />
+                </a>
+                <a href="https://www.instagram.com/ao.gung/" target="_blank">
+                  <img
+                    class="w-8 h-8"
+                    src="./dist/svg/instagram.svg"
+                    alt="instagram"
+                  />
+                </a>
+                <a href="https://wa.me/6285217117840" target="_blank">
+                  <img
+                    class="w-8 h-8"
+                    src="./dist/svg/whatsapp.svg"
+                    alt="whatsapp"
+                  />
+                </a>
+                <a
+                  href="https://web.facebook.com/agung.maulana.39904?locale=id_ID"
+                  target="_blank"
+                >
+                  <img
+                    class="w-8 h-8"
+                    src="./dist/svg/facebook.svg"
+                    alt="facebook"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Akhir Bagian Kontak -->
+
+      <!-- FOOTER -->
+      <div
+        class="footer mt-4 w-full h-auto py-5 bg-blue-950 text-slate-200 font-bold text-center"
+      >
+        <p>Copyright &lt;nama&gt; 2024</p>
+      </div>
+      <!-- AKHIR FOOTER -->
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

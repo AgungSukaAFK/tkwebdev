@@ -1,0 +1,20 @@
+{
+  "name": "tekwondo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tail": "npx tailwindcss -i ./input.css -o ./style.css --watch"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "nodemailer": "^6.9.8",
+    "tailwindcss": "^3.4.1"
+  }
+}
